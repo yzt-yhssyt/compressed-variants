@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:adventure/kill_a_mob",
+  "display": {
+    "icon": {
+      "id": "compressed_variants:zombie_spawn_egg_1"
+    },
+    "title": {
+      "translate": "advancement.compressed_variants.kill_compressed_1.title"
+    },
+    "description": {
+      "translate": "advancement.compressed_variants.kill_compressed_1.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "kill_tier_1": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{CompressedVariantsTier:1}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "kill_tier_1"
+    ]
+  ]
+}

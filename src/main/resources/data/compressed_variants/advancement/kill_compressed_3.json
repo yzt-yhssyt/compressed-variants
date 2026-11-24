@@ -1,0 +1,33 @@
+{
+  "parent": "compressed_variants:kill_compressed_2",
+  "display": {
+    "icon": {
+      "id": "compressed_variants:zombie_spawn_egg_3"
+    },
+    "title": {
+      "translate": "advancement.compressed_variants.kill_compressed_3.title"
+    },
+    "description": {
+      "translate": "advancement.compressed_variants.kill_compressed_3.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "kill_tier_3": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{CompressedVariantsTier:3}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "kill_tier_3"
+    ]
+  ]
+}

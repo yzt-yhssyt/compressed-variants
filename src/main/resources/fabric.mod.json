@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "compressed_variants",
+	"version": "${version}",
+	"name": "压缩变体",
+	"description": "给僵尸、骷髅、蜘蛛、末影人、苦力怕及其变种加入一重/二重压缩变体：数值分别 ×9 与 ×81，使用重新配色的贴图，自然刷新并可穿戴装备。",
+	"authors": [
+		"yzt"
+	],
+	"contact": {
+		"homepage": "https://github.com/yzt-yhssyt/compressed-variants",
+		"sources": "https://github.com/yzt-yhssyt/compressed-variants",
+		"issues": "https://github.com/yzt-yhssyt/compressed-variants/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/compressed_variants/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.compressedvariants.CompressedVariants"
+		],
+		"client": [
+			"com.compressedvariants.client.CompressedVariantsClient"
+		]
+	},
+	"mixins": [
+		"compressed_variants.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
